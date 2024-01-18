@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic</title>
+</head>
+<body>
+    <section>
+        <h1>Arithmetic</h1>
+        <form>
+            <input type="number" id="num1" name="num1" required>
+            <label for="num2">+</label>
+            <input type="number" id="num2" name="num2" required>
+            <button type="button" onclick="calculateSum()">=</button>
+            <p id="sum" style="display: inline;"></p>
+        </form>
+    </section>
+    <script>
+        function calculateSum() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let sum = num1 + num2;
+            document.getElementById("sum").innerHTML = sum;
+        }
+    </script>
+</body>
+</html>
